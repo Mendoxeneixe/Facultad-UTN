@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": true,
+  "editor.cursorBlinking": "expand",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
