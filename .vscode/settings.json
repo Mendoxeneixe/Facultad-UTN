@@ -3,6 +3,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": true,
   "editor.cursorBlinking": "expand",
+  "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
