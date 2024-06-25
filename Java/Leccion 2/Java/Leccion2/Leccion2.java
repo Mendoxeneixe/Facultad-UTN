@@ -1,4 +1,4 @@
-package com.neo.leccion2;
+package Java.Leccion2;
 
 import java.util.Scanner;
 
