@@ -1,7 +1,4 @@
 //Ejercicio 1: Deerminar Estacion del año segun la fecha actual.
-const $ = (selector) => document.querySelector(selector);
-const $body = document.body;
-
 function formatDate(date) {
   const formattedDate = new Date(date).toLocaleDateString("es-Es", {
     year: "numeric",
@@ -33,7 +30,8 @@ function determinarEstacion() {
 
   const veranoInicio = "21 de Diciembre";
   const veranoFin = "20 de Marzo";
-  const otoñoFin = "20 de Junio";
+  const otonoInicio = "21 de Marzo";
+  const otonoFin = "20 de Junio";
   const inviernoInicio = "21 de Junio";
   const inviernoFin = "20 de Septiembre";
   const primaveraInicio = "21 de Septiembre";
@@ -91,12 +89,12 @@ switch (new Date().getMonth()) {
   case 4:
   case 5:
     estacion = "Otoño";
-    breack;
+    break;
   case 6:
   case 7:
   case 8:
     estacion = "Otoño";
-    breack;
+    break;
   case 9:
   case 10:
   case 11:
@@ -106,3 +104,123 @@ switch (new Date().getMonth()) {
 console.log(
   `Bienvenidos a la estacion de ${estacion} ${new Date().toLocaleDateString()}.`
 );
+
+//Evitar repetir tu codifo
+//Dry don`t repeatyourself
+// Let days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes' 'Sabado','Domingo'];
+
+let days = 1;
+
+switch (days) {
+  case 1:
+    console.log("hoy es Lunes");
+    break;
+  case 2:
+    console.log("hoy es Martes");
+    break;
+  case 3:
+    console.log("hoy es Miércoles");
+    break;
+  case 4:
+    console.log("hoy es Jueves");
+    break;
+  case 5:
+    console.log("hoy es Viernes");
+    break;
+  case 6:
+    console.log("hoy es Sábado");
+    break;
+  case 7:
+    console.log("hoy es Domingo");
+    break;
+  default:
+    console.log("Error en el ingreso del día de la semana");
+    break;
+}
+
+let days2 = [
+  "Lunes",
+  "Martes",
+  "Miercoles",
+  "Jueves",
+  "Viernes",
+  "Sabado",
+  "Domingo",
+];
+
+function getDay(n) {
+  if (n < 1 || n > 7) {
+    throw new Error("Out of range");
+  }
+  return days2[n - 1];
+}
+
+console.log(getDay(5));
+
+let months = 6;
+
+switch (months) {
+  case 1:
+    console.log("Enero");
+    break;
+  case 2:
+    console.log("Febrero");
+    break;
+  case 3:
+    console.log("Marzo");
+    break;
+  case 4:
+    console.log("Abril");
+    break;
+  case 5:
+    console.log("Mayo");
+    break;
+  case 6:
+    console.log("Junio");
+    break;
+  case 7:
+    console.log("Julio");
+    break;
+  case 8:
+    console.log("Agosto");
+    break;
+  case 9:
+    console.log("Septiembre");
+    break;
+  case 10:
+    console.log("Octubre");
+    break;
+  case 11:
+    console.log("Noviembre");
+    break;
+  case 12:
+    console.log("Diciembre");
+    break;
+  default:
+    console.log("Error en el ingreso del mes");
+    break;
+}
+
+let months2 = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+
+function getMonth(n) {
+  if (n < 1 || n > 12) {
+    throw new Error("Out of range");
+  }
+  return months2[n - 1];
+}
+
+console.log(getMonth(5));
