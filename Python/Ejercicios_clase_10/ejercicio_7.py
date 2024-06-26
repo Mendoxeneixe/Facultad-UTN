@@ -1,5 +1,5 @@
 """
-Ejercicio 7: Dadas las horas trabajadas de 5personas y la tarifa
+Ejercicio 7: Dadas las horas trabajadas de 5 personas  y la tarifa
 de pago. Calcular el salario y la  sumatoria de todos los salarios.
     """
     
